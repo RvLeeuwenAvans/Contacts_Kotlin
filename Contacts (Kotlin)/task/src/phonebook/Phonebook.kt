@@ -10,14 +10,6 @@ import java.nio.file.Path
 class Phonebook(filePath: Path? = null) {
     private val contactList: MutableList<Contact> = mutableListOf<Contact>()
 
-    init {
-//        if (storagePath != null) {
-////            contactList = Path(storagePath).toFile().readText().toList()
-//        } else {
-//            contactList = mutableListOf<Contact>()
-//        }
-    }
-
     fun createContact() {
         print("Enter the type (${ContactType.values().joinToString(", ") { it.toString().lowercase() }}): ")
         val input = readln().trimIndent()

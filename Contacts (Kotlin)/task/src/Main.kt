@@ -5,7 +5,6 @@ import java.nio.file.Path
 import java.time.LocalDate
 import java.time.format.DateTimeParseException
 import kotlin.io.path.Path
-import kotlin.io.path.exists
 
 fun main(vararg args: String) {
     var filePath: Path? = null
